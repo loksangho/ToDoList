@@ -1,0 +1,174 @@
+#projects_list_ul {
+    list-style: none;
+}
+
+#todo_list_ul {
+    list-style: none;
+}
+
+#project_list_popup_ul {
+    list-style: none;
+}
+
+
+nav {
+    height: 10vh;
+    background-color: cadetblue;
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.orange600 {
+    color: #FB8C00;
+}
+
+.material-icons.red600 {
+    color: #fb0000;
+}
+
+.material-icons.yellow600 {
+    color: #d4fb00;
+}
+
+.material-icons.white600 {
+    color: #959595;
+}
+
+
+
+#projects_list {
+    height: 90vh;
+    width: 20%;
+    overflow: scroll;
+    border: 1px solid gray;
+}
+
+#todo_list {
+    height: 90vh;
+    width: 80%;
+    overflow: scroll;
+    border: 1px solid gray;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+#overlay2 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 4;
+    cursor: pointer;
+}
+
+#overlay3 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+    cursor: pointer;
+}
+
+#add_project_popup {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    z-index: 3;
+    background-color: white;
+}
+
+#project_list_popup,
+#priority_list_popup,
+#notes_popup {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    z-index: 6;
+    background-color: white;
+}
+
+#add_task {
+    background-color: cadetblue;
+    border-radius: 5px;
+}
+
+#add_project_form,
+#add_task_form {
+    display: none;
+}
+
+.remove_project {
+    display:none;
+}
+
+.task_details {
+    display:none;
+}
+
+
+.project_list_under_task_popup {
+    display:none;
+    background-color: white;
+    z-index:3;
+    position:relative;
+    top: 10px;
+    white-space: nowrap;
+}
+
+.project_list_under_task_popup ul {
+    list-style:none;
+}
+
+.project_highlighted {
+    background-color: cadetblue;
+}

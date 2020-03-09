@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To Do List</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="tiny-date-picker.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <div id="overlay3"></div>
+
+    <nav>
+        <i class="material-icons md-48" id="add_project_button">add</i>
+
+        <div id="add_project_popup">
+
+            <input type="text" id="title" placeholder="Title"><br>
+            <input type="text" id="description" placeholder="Description"><br>
+
+            <input type="text" id="schedule_date" placeholder="Schedule">
+            <i class="material-icons md-18" id="select_project_button">assignment</i>
+            <i class="material-icons md-18" id="select_priority_button">flag</i>
+            <i class="material-icons md-18" id="add_notes_button">notes</i>
+
+            <button id="cancel_task">Cancel</button>
+            <button id="add_task">Add Task</button>
+            <div id="overlay2"></div>
+
+            <div id="project_list_popup"></div>
+            <div id="priority_list_popup">
+                <ul>
+                    <li class="priority_list_popup_item" data-priority="1"> <i class="material-icons red600 md-18">flag</i>
+                        Priority 1</li>
+                    <li class="priority_list_popup_item" data-priority="2"> <i class="material-icons orange600 md-18">flag</i>
+                        Priority 2</li>
+                    <li class="priority_list_popup_item" data-priority="3"> <i class="material-icons yellow600 md-18">flag</i>
+                        Priority 3</li>
+                    <li class="priority_list_popup_item" data-priority="4"> <i class="material-icons white600 md-18">flag</i>
+                        Priority 4</li>
+                </ul>
+            </div>
+
+            <div id="notes_popup">
+                <textarea id="notes_input" rows="4" cols="50"></textarea>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div id="content">
+
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
