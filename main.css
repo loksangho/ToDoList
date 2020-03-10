@@ -164,7 +164,7 @@ body {
     cursor: pointer;
 }
 
-.task_details {
+.task_details, .edit_task_details {
     display:none;
 }
 
