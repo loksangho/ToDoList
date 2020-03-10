@@ -14,7 +14,7 @@
 nav {
     height: 10vh;
     background-color: cadetblue;
-    display:flex;
+    display: flex;
     flex-direction: row;
 }
 
@@ -128,7 +128,7 @@ body {
     background-color: white;
 }
 
-#select_project_button, 
+#select_project_button,
 #select_priority_button,
 #add_notes_button {
     cursor: pointer;
@@ -145,16 +145,21 @@ body {
     background-color: white;
 }
 
-.project_list_popup_item:hover, .project_list_popup_item_under_task_list:hover {
+.project_list_popup_item:hover,
+.project_list_popup_item_under_task_list:hover {
     background-color: cadetblue;
     cursor: pointer;
 }
 
-.project_list:hover, .todo_list:hover {
+.project_list:hover,
+.todo_list:hover,
+#add_task_maincolumn:hover,
+#add_project_button_sidebar:hover {
     background-color: darkorange;
 }
 
-#add_task, .submit_button {
+#add_task,
+.submit_button {
     background-color: cadetblue;
     border-radius: 5px;
 }
@@ -165,34 +170,85 @@ body {
 }
 
 .remove_project {
-    display:none;
-    float:right;
+    display: none;
+    float: right;
     cursor: pointer;
 }
 
-.task_details, .edit_task_details {
-    display:none;
+.task_details,
+.edit_task_details {
+    display: none;
 }
 
 
 .project_list_under_task_popup {
-    display:none;
+    display: none;
     background-color: white;
-    z-index:3;
-    position:relative;
+    z-index: 3;
+    position: relative;
     top: 10px;
     white-space: nowrap;
 }
 
 .project_list_under_task_popup ul {
-    list-style:none;
+    list-style: none;
 }
 
 .project_highlighted {
     background-color: cadetblue;
 }
 
-ul, li {
-    margin:0;
-    padding:0;
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+input[type=checkbox].todo_checkbox {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+input[type=checkbox].todo_checkbox + label.todo_checkbox_label {
+    padding-left: 35px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+
+input[type=checkbox].todo_checkbox:checked + label.todo_checkbox_label {
+    background-position: 0 -30px;
+}
+
+label.todo_checkbox_label {
+    background-image: url("csscheckbox.png");
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
