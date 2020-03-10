@@ -14,6 +14,8 @@
 nav {
     height: 10vh;
     background-color: cadetblue;
+    display:flex;
+    flex-direction: row;
 }
 
 .material-icons.md-18 {
@@ -148,7 +150,11 @@ body {
     cursor: pointer;
 }
 
-#add_task {
+.project_list:hover, .todo_list:hover {
+    background-color: darkorange;
+}
+
+#add_task, .submit_button {
     background-color: cadetblue;
     border-radius: 5px;
 }
@@ -184,4 +190,9 @@ body {
 
 .project_highlighted {
     background-color: cadetblue;
+}
+
+ul, li {
+    margin:0;
+    padding:0;
 }
